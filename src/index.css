@@ -1,13 +1,69 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  background: linear-gradient(to right, #cee5ef, #219ebc); /* Light blue to blue gradient */
+  text-align: left; /* Ensure text is left-aligned by default */
+  font-family: 'Segoe UI';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: flex-start; /* Align content to the top */
+  padding: 20px; /* Add padding to prevent content from touching the edges */
+  height: 100vh; /* Full viewport height */
+  margin: 0; /* Remove default margin */
+  overflow: auto; /* Enable scrolling if content overflows */
+}
+
+.container {
+  text-align: left; /* Ensure text inside container is left-aligned */
+  width: 80%; /* Adjust as needed for content width */
+  max-width: 600px; /* Set a max width for the container */
+  padding: 30px; /* Add some padding inside the container */
+  background: linear-gradient(to right, #0393b7, #0487a8);
+  border-radius: 10px; /* Add rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  max-height: 100%; /* Ensure it does not exceed the viewport height */
+  overflow-y: auto; /* Enable vertical scrolling */
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.heading {
+  font-size: 52px;
+  font-family: 'Segoe UI';
+  font-weight: bold;
+  text-align: center;
+}
+
+.Labels {
+  font-size: 24px;
+  margin: 8px;
+}
+
+.inputs {
+  padding: 6px;
+  border-radius: 10px;
+  margin: 8px;
+  width: 60%;
+  font-size: 24px;
+}
+
+.submit-button {
+  display: block;
+  margin: 0 auto; /* Centers the button horizontally */
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #f2f2f2; /* Off-white color */
+  color: #333; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.submit-button:hover {
+  background-color: #bfe6f2;
+  color: #fff; 
 }
